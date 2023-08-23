@@ -8,8 +8,16 @@
     --gray-800: #202024;
     --gray-900: #121214;
   
+    --green-300: #00b37e;
     --green-500: #00875f;
-  }
+
+    --red-500: #F75A68;
+}
+
+:focus, :focus-visible {
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--green-500);
+}
 
 * {
     margin: 0;
@@ -21,4 +29,10 @@ body {
     background: var(--gray-900);
     color: var(--gray-300);
     -webkit-font-smothing: antiliased;
+}
+
+body, input, textarea, button {
+    font-family: 'Robot', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
 }
